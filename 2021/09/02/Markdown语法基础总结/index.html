@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Markdown语法基础总结 | 文凌云的秘密基地</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="标题# H1## H2### H3#### H4##### H5###### H6（注意：#号和文字间至少得有一个空格,最多六级标题）   效果如下 ↓ 2.多级引用+列标记(+ - *)+分割线(* - _)引用需要在被引用的文本前加上&gt;符号和空格，允许多层嵌套    看到这就可以了             继续继续下去           今天就到这了         ———————分割">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法基础总结">
+<meta property="og:url" content="https://wenlingyun.top/2021/09/02/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="文凌云的秘密基地">
+<meta property="og:description" content="标题# H1## H2### H3#### H4##### H5###### H6（注意：#号和文字间至少得有一个空格,最多六级标题）   效果如下 ↓ 2.多级引用+列标记(+ - *)+分割线(* - _)引用需要在被引用的文本前加上&gt;符号和空格，允许多层嵌套    看到这就可以了             继续继续下去           今天就到这了         ———————分割">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://diy-sprint.top/img/biaoti.png">
+<meta property="og:image" content="https://diy-sprint.top/img/duoji.png">
+<meta property="og:image" content="https://wenlingyun.top/img/cuti.png">
+<meta property="og:image" content="https://www.baidu.com/img/flexible/logo/pc/result.png">
+<meta property="og:image" content="https://diy-sprint.top/img/tupian.png">
+<meta property="og:image" content="https://diy-sprint.top/img/mulu.png">
+<meta property="article:published_time" content="2021-09-02T00:12:06.000Z">
+<meta property="article:modified_time" content="2021-10-25T13:58:40.010Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://diy-sprint.top/img/biaoti.png">
+  
+    <link rel="alternative" href="/atom.xml" title="文凌云的秘密基地" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Shenhua666/Shenhua666.github.io@main/img/avatar.jpg">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+      <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("your_app_id", "your_app_key");</script>
+
+<script src="/js/Counter.js"></script>
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://cdn.jsdelivr.net/gh/Shenhua666/Shenhua666.github.io@main/img/avatar.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/"></a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/web/" style="font-size: 10px;">web</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/Herobrind">我的仓库</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://diy-sprint.top">山山而川</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://eyuxx.xyz/">鳄鱼香香烤串</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://hongxingwang.top">尘世浮沉</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://www.cnblogs.com/qinmu7">芹炑</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://songxiangling.github.io/">sitoi</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://cdn.jsdelivr.net/gh/Shenhua666/Shenhua666.github.io@main/img/avatar.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Markdown语法基础总结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/09/02/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/" class="article-date">
+  	<time datetime="2021-09-02T00:12:06.000Z" itemprop="datePublished">2021-09-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Markdown语法基础总结
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Markdown/">Markdown</a>
+	</div>
+
+
+        
+          
+<div class="counter-tag counter">
+    <span id="/2021/09/02/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="Markdown语法基础总结">
+         &nbsp;
+        view
+    </span>
+</div>
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p># H1<br>## H2<br>### H3<br>#### H4<br>##### H5<br>###### H6<br>（注意：#号和文字间至少得有一个空格,最多六级标题）  </p>
+<p>效果如下 ↓<br><img src="https://diy-sprint.top/img/biaoti.png" alt="img"></p>
+<h2 id="2-多级引用-列标记-分割线"><a href="#2-多级引用-列标记-分割线" class="headerlink" title="2.多级引用+列标记(+ - *)+分割线(* - _)"></a>2.多级引用+列标记(+ - *)+分割线(* - _)</h2><p>引用需要在被引用的文本前加上&gt;符号和空格，允许多层嵌套</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>看到这就可以了   </p>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p> 继续继续下去  </p>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>  今天就到这了  </p>
+<ul>
+<li></li>
+</ul>
+</blockquote>
+<hr>
+<hr>
+<p>———————分割线<br>效果如下 ↓  </p>
+<p><img src="https://diy-sprint.top/img/duoji.png" alt="img"></p>
+<h2 id="3-文本强调"><a href="#3-文本强调" class="headerlink" title="3.文本强调"></a>3.文本强调</h2><p> Markdown 使用星号（*）和底线（_）作为斜体，被 ** 或 __包围的字词作为粗体，用三个 *** 或 ___包起来的字词作为粗斜体   </p>
+<p> <em>斜体</em>  or  <em>斜体</em><br> <strong>粗体</strong>  or  <strong>粗体</strong><br> <em><strong>粗斜体</strong></em> or  <em><strong>粗斜体</strong></em>  </p>
+<p> 效果如下 ↓<br><img src="/img/cuti.png"> </p>
+<h2 id="4-链接及图片引用"><a href="#4-链接及图片引用" class="headerlink" title="4.链接及图片引用"></a>4.链接及图片引用</h2><p> 链接文字用 [方括号] 来标记,方块括号紧接着用 (圆括) 号并插入网址链接，如果要加上链接的 title 文字，只要在网址后面，用 “双引号” 把 title 文字包起来即可  </p>
+<p> 行内式 <a target="_blank" rel="noopener" href="https://www.baidu.com/" title="链接描述">百度</a><br> 显示地址 <a target="_blank" rel="noopener" href="https://www.baidu.com/">https://www.baidu.com</a><br> !<a href="url">图片文字</a>   与链接一样只是在开头多了个！<br> <img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="百度"></p>
+<p> 效果如下 ↓<br><img src="https://diy-sprint.top/img/tupian.png" alt="img">  </p>
+<h2 id="5-目录"><a href="#5-目录" class="headerlink" title="5.目录"></a>5.目录</h2><p> 效果如下 ↓<br> <img src="https://diy-sprint.top/img/mulu.png" alt="img"></p>
+<h2 id="6-转义："><a href="#6-转义：" class="headerlink" title="6.转义："></a>6.转义：</h2><p> Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线  </span><br><span class="line">`   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   底线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  括弧</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   惊叹号     </span><br></pre></td></tr></table></figure>
+
+
+
+<p>##补充特殊字符  </p>
+<table>
+<thead>
+<tr>
+<th align="left">特殊字符</th>
+<th>描述</th>
+<th>字符的代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td>空格符</td>
+<td>&amp;nbsp;</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td>小于号</td>
+<td><code>&lt;</code></td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td>大于号</td>
+<td><code>&gt;</code></td>
+</tr>
+<tr>
+<td align="left">&amp;</td>
+<td>与号</td>
+<td><code>&amp;</code></td>
+</tr>
+<tr>
+<td align="left">￥</td>
+<td>人民币</td>
+<td><code>¥</code></td>
+</tr>
+<tr>
+<td align="left">©</td>
+<td>版权</td>
+<td><code>©</code></td>
+</tr>
+<tr>
+<td align="left">®</td>
+<td>注册商标</td>
+<td><code>®</code></td>
+</tr>
+<tr>
+<td align="left">°C</td>
+<td>摄氏度</td>
+<td><code>°C</code></td>
+</tr>
+<tr>
+<td align="left">±</td>
+<td>正负号</td>
+<td><code>±</code></td>
+</tr>
+<tr>
+<td align="left">×</td>
+<td>乘号</td>
+<td><code>×</code></td>
+</tr>
+<tr>
+<td align="left">÷</td>
+<td>除号</td>
+<td><code>÷</code></td>
+</tr>
+<tr>
+<td align="left">²</td>
+<td>平方（上标²）</td>
+<td><code>²</code></td>
+</tr>
+<tr>
+<td align="left">³</td>
+<td>立方（上标³）</td>
+<td><code>³</code></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/10/27/Windows10%E7%9A%84%E5%AE%89%E8%A3%85/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          Windows10下载和安装[PE工具装机篇]
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/08/04/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">自定义登录页面</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="Markdown语法基础总结" data-title="Markdown语法基础总结" data-url="https://wenlingyun.top/2021/09/02/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/"  data-images="https://cdn.jsdelivr.net/gh/Shenhua666/Shenhua666.github.io@main/img/avatar.jpg" data-content="Markdown语法基础总结">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2022 John Doe
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>
